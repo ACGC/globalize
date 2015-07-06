@@ -53,7 +53,7 @@ Globalize.prototype.currencyFormatter = function( currency, options ) {
 	cldr = this.cldr;
 	options = options || {};
 
-	args = [].slice.call( arguments, 0 );
+	args = [ currency, options ];
 	style = options.style || "symbol";
 
 	validateDefaultLocale( cldr );

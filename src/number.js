@@ -28,8 +28,6 @@ define([
 	numberFormatterFn, numberFormatProperties, numberNumberingSystem, numberParserFn,
 	numberParseProperties, numberPattern, numberSymbol, stringPad ) {
 
-var slice = [].slice;
-
 /**
  * .numberFormatter( [options] )
  *
@@ -50,7 +48,7 @@ Globalize.prototype.numberFormatter = function( options ) {
 	options = options || {};
 	cldr = this.cldr;
 
-	args = slice.call( arguments, 0 );
+	args = [ options ];
 
 	validateDefaultLocale( cldr );
 
@@ -121,7 +119,7 @@ Globalize.prototype.numberParser = function( options ) {
 	options = options || {};
 	cldr = this.cldr;
 
-	args = slice.call( arguments, 0 );
+	args = [ options ];
 
 	validateDefaultLocale( cldr );
 

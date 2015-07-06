@@ -57,7 +57,7 @@ Globalize.prototype.pluralGenerator = function( options ) {
 	options = options || {};
 	cldr = this.cldr;
 
-	args = [].slice.call( arguments, 0 );
+	args = [ options ];
 	type = options.type || "cardinal";
 
 	validateParameterTypePluralType( options.type, "options.type" );

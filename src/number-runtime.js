@@ -27,13 +27,13 @@ Globalize._validateParameterTypeString = validateParameterTypeString;
 Globalize.numberFormatter =
 Globalize.prototype.numberFormatter = function( options ) {
 	options = options || {};
-	return Globalize[ runtimeKey( "numberFormatter", this._locale, arguments ) ];
+	return Globalize[ runtimeKey( "numberFormatter", this._locale, [ options ] ) ];
 };
 
 Globalize.numberParser =
 Globalize.prototype.numberParser = function( options ) {
 	options = options || {};
-	return Globalize[ runtimeKey( "numberParser", this._locale, arguments ) ];
+	return Globalize[ runtimeKey( "numberParser", this._locale, [ options ] ) ];
 };
 
 Globalize.formatNumber =

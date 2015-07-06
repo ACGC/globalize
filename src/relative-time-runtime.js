@@ -23,7 +23,7 @@ Globalize.prototype.formatRelativeTime = function( value, unit, options ) {
 Globalize.relativeTimeFormatter =
 Globalize.prototype.relativeTimeFormatter = function( unit, options ) {
 	options = options || {};
-	return Globalize[ runtimeKey( "relativeTimeFormatter", this._locale, arguments ) ];
+	return Globalize[ runtimeKey( "relativeTimeFormatter", this._locale, [ unit, options ] ) ];
 };
 
 return Globalize;

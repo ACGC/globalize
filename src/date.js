@@ -36,8 +36,6 @@ function validateRequiredCldr( path, value ) {
 	});
 }
 
-var slice = [].slice;
-
 /**
  * .dateFormatter( options )
  *
@@ -62,7 +60,7 @@ Globalize.prototype.dateFormatter = function( options ) {
 	cldr = this.cldr;
 	options = options || { skeleton: "yMd" };
 
-	args = slice.call( arguments, 0 );
+	args = [ options ];
 
 	validateDefaultLocale( cldr );
 
@@ -110,7 +108,7 @@ Globalize.prototype.dateParser = function( options ) {
 	cldr = this.cldr;
 	options = options || { skeleton: "yMd" };
 
-	args = slice.call( arguments, 0 );
+	args = [ options ];
 
 	validateDefaultLocale( cldr );
 

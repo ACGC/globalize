@@ -58,7 +58,7 @@ Globalize.prototype.relativeTimeFormatter = function( unit, options ) {
 	cldr = this.cldr;
 	options = options || {};
 
-	args = [].slice.call( arguments, 0 );
+	args = [ unit, options ];
 
 	validateDefaultLocale( cldr );
 

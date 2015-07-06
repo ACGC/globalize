@@ -20,7 +20,7 @@ Globalize.prototype.plural = function( value, options ) {
 Globalize.pluralGenerator =
 Globalize.prototype.pluralGenerator = function( options ) {
 	options = options || {};
-	return Globalize[ runtimeKey( "pluralGenerator", this._locale, arguments ) ];
+	return Globalize[ runtimeKey( "pluralGenerator", this._locale, [ options ] ) ];
 };
 
 return Globalize;
