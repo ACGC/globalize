@@ -7,10 +7,10 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2015-06-01T18:58Z
+ * Date: 2015-07-06T17:22Z
  */
 /*!
- * Globalize Runtime v1.0.0 2015-06-01T18:58Z Released under the MIT license
+ * Globalize Runtime v1.0.0 2015-07-06T17:22Z Released under the MIT license
  * http://git.io/TrdQbw
  */
 (function( root, factory ) {
@@ -1225,13 +1225,13 @@ Globalize._validateParameterTypeDate = validateParameterTypeDate;
 Globalize.dateFormatter =
 Globalize.prototype.dateFormatter = function( options ) {
 	options = options || { skeleton: "yMd" };
-	return Globalize[ runtimeKey( "dateFormatter", this._locale, arguments ) ];
+	return Globalize[ runtimeKey( "dateFormatter", this._locale, [ options ] ) ];
 };
 
 Globalize.dateParser =
 Globalize.prototype.dateParser = function( options ) {
 	options = options || { skeleton: "yMd" };
-	return Globalize[ runtimeKey( "dateParser", this._locale, arguments ) ];
+	return Globalize[ runtimeKey( "dateParser", this._locale, [ options ] ) ];
 };
 
 Globalize.formatDate =

@@ -7,10 +7,10 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2015-06-01T18:58Z
+ * Date: 2015-07-06T17:22Z
  */
 /*!
- * Globalize v1.0.0 2015-06-01T18:58Z Released under the MIT license
+ * Globalize v1.0.0 2015-07-06T17:22Z Released under the MIT license
  * http://git.io/TrdQbw
  */
 (function( root, factory ) {
@@ -177,7 +177,7 @@ Globalize.prototype.relativeTimeFormatter = function( unit, options ) {
 	cldr = this.cldr;
 	options = options || {};
 
-	args = [].slice.call( arguments, 0 );
+	args = [ unit, options ];
 
 	validateDefaultLocale( cldr );
 

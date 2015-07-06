@@ -7,10 +7,10 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2015-06-01T18:58Z
+ * Date: 2015-07-06T17:22Z
  */
 /*!
- * Globalize Runtime v1.0.0 2015-06-01T18:58Z Released under the MIT license
+ * Globalize Runtime v1.0.0 2015-07-06T17:22Z Released under the MIT license
  * http://git.io/TrdQbw
  */
 (function( root, factory ) {
@@ -100,7 +100,7 @@ Globalize._currencyNameFormat = currencyNameFormat;
 Globalize.currencyFormatter =
 Globalize.prototype.currencyFormatter = function( currency, options ) {
 	options = options || {};
-	return Globalize[ runtimeKey( "currencyFormatter", this._locale, arguments ) ];
+	return Globalize[ runtimeKey( "currencyFormatter", this._locale, [ currency, options ] ) ];
 };
 
 Globalize.formatCurrency =

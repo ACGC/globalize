@@ -7,7 +7,7 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2015-06-01T18:58Z
+ * Date: 2015-07-06T17:22Z
  */
 
 // Core
